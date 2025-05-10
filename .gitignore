@@ -1,0 +1,49 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Streamlit cache
+.streamlit/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+*.DS_Store
+
+# IDE-specific ignores
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Test coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.cover
+*.py,cover
+coverage.xml
+*.coveragerc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sqlite3

@@ -1,0 +1,8 @@
+streamlit
+crewai
+crewai-tools
+markitdown
+chonkie[semantic,model2vec]
+qdrant-client
+firecrawl-py
+fastembed
