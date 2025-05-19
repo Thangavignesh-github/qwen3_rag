@@ -1,8 +1,39 @@
-streamlit
+# crewai
+# crewai-tools
+# chonkie[semantic]
+# markitdown
+# qdrant-client
+# fastembed
+# streamlit
+
+
+
+# Core packages
 crewai
 crewai-tools
+chonkie[semantic]
 markitdown
-chonkie[semantic,model2vec]
+streamlit
+
+# Vector DB and embedding
 qdrant-client
-firecrawl-py
 fastembed
+sentence-transformers  # Required for semantic embeddings if chonkie/fastembed fallback fails
+
+# LiteLLM - used by CrewAI internally
+litellm
+
+# PDF support (if you're parsing PDFs)
+pypdf
+
+# Firecrawl support (if you use Firecrawl API for web search)
+firecrawl-py
+
+# Environment variable support
+python-dotenv
+
+# LlamaIndex (optional if you use indexing or document agents)
+llama-index
+
+# Local LLMs via Ollama (optional but common with qwen3:4b)
+ollama

@@ -13,6 +13,7 @@ from crewai_tools import FirecrawlSearchTool
 def load_llm():
     llm = LLM(
         model="ollama/qwen3:4b",
+        # model="ollama/qwen3",
         base_url="http://localhost:11434"
     )
     return llm
@@ -26,7 +27,9 @@ load_dotenv()
 # ===========================
 def create_agents_and_tasks(pdf_tool):
     """Creates a Crew with the given PDF tool (if any) and a web search tool."""
-    web_search_tool = FirecrawlSearchTool(api_key=os.getenv("FIRECRAWL_API_KEY"))
+    # api_key = os.getenv("FIRECRAWL_API_KEY")
+    web_search_tool = FirecrawlSearchTool()
+    # web_search_tool = FirecrawlSearchTool()
 
     retriever_agent = Agent(
         role="Retrieve relevant information to answer the user query: {query}",
@@ -207,5 +210,3 @@ if prompt:
 
     # 4. Save assistant's message to session
     st.session_state.messages.append({"role": "assistant", "content": result})
-
-
